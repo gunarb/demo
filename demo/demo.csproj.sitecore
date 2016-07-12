@@ -1,0 +1,17 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="mvcdemo" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Views\Layouts\demoLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{0CCBE191-225F-44D7-A1DF-F3352D989CC8}</Item>
+  </File>
+  <File Include="Views\SubLayouts\Jumbotron.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{31AB9EC3-A705-40B5-8ED1-C2D97A8A8226}</Item>
+  </File>
+  <File Include="Views\SubLayouts\Columns.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{AEF9F467-ABFB-4D8C-9510-06DDA0286536}</Item>
+  </File>
+  <File Include="Views\SubLayouts\CTA.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{55043B37-3E09-431A-B678-9BAB83E0D859}</Item>
+  </File>
+</Project>

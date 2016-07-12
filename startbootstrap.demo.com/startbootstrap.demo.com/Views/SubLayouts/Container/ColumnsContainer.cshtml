@@ -1,0 +1,8 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="@Model.Rendering.Parameters["Class_1"]">
+    <div class="row @Model.Rendering.Parameters["Class_2"]">
+        @Html.Sitecore().DynamicPlaceholder("columnContainer")
+    </div>
+</div>

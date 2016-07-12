@@ -1,0 +1,7 @@
+﻿@using Sitecore.Mvc
+@model RenderingModel
+<div class="cta-component">
+    <h2>@Html.Sitecore().Field(demo.ContentIDs.HasContent.Fields.Title, Model.Item)</h2>
+    <p>@Html.Sitecore().Field(demo.ContentIDs.HasContent.Fields.Description, Model.Item)</p>
+    <p>@Html.Sitecore().Field(demo.ContentIDs.HasDestination.Fields.Destination, Model.Item, new { @class = "btn btn-default" })</p>
+</div>

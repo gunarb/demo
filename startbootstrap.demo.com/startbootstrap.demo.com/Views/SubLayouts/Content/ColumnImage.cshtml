@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@using Glass.Mapper.Sc.Web.Mvc
+@model startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.ColumnImage
+
+<div class="col-lg-4 col-sm-6">
+    @using (Html.Glass().BeginRenderLink(x => x.URL, new { @class = "portfolio-box" }, isEditable: true))
+    {
+        @Html.Glass().Editable(x => x.Image)
+
+        string portfolio_box = Sitecore.Context.PageMode.IsPageEditor ? "" : "portfolio-box-caption";
+
+        <div class=@portfolio_box>
+            <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                    @Html.Glass().Editable(x => x.Category)
+                </div>
+                <div class="project-name">
+                    @Html.Glass().Editable(x => x.Name)
+                </div>
+            </div>
+        </div>
+    }
+</div>

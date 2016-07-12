@@ -1,0 +1,15 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<demo.Models.sitecore.templates.Content_Type.Jumbotron>
+
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>@Editable(x=>x.Title)</h1>
+            <p class="lead">@Editable(x=>x.Description)</p>
+            <p>@Editable(x=>x.Destination, new {@class = "btn btn-primary btn-lg"})</p>
+        </div>
+        <div class="col-sm-6">
+            @Editable(x=>x.Image, new {@class="img-responsive"})
+        </div>
+    </div>
+</div>

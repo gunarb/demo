@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Xml
+@using Sitecore.Data.Items
+@using Sitecore.Resources.Media
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    var imageId = XmlUtil.GetAttribute("mediaid", XmlUtil.LoadXml(@Model.Rendering.Parameters["Image"]));
+    MediaItem imageItem = Sitecore.Context.Database.GetItem(imageId);
+    string backgroundImageUrl = imageItem != null ? MediaManager.GetMediaUrl(imageItem) : "";
+}
+
+<header style="background-image:url(@backgroundImageUrl);">
+    @Html.Sitecore().DynamicPlaceholder("contentHeader")
+</header>

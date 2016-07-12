@@ -1,0 +1,8 @@
+﻿@using Sitecore.Mvc
+@using Glass.Mapper.Sc.Web.Mvc
+@model startbootstrap.demo.com.Models.ColumnModel
+
+<div class="col-lg-4 @Model.Rendering.Parameters["Class_1"] text-center">
+    <i class="fa @Model.Rendering.Parameters["Class_2"] fa-3x sr-contact"></i>
+    <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
+</div>

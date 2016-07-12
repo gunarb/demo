@@ -1,0 +1,17 @@
+﻿@using Sitecore.Mvc
+@model demo.Models.Car
+
+<div>
+    <h1>Car Description</h1>
+    <hr />
+    <div class="carInfo">
+        Model: @Model.Model
+        <br />
+        Make: @Model.Make
+        <br />
+        Year: @Model.Year
+    </div>
+    <div class="infoFormCar">
+        @Html.Sitecore().Placeholder("getInfoCar")
+    </div>
+</div>

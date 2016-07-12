@@ -1,0 +1,9 @@
+﻿@using Sitecore.Mvc
+@using Glass.Mapper.Sc.Web.Mvc
+@model startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.Column_Lg8_Contact
+
+<div class="col-lg-8 col-lg-offset-2 text-center">
+    <h2 class="section-heading">@Html.Glass().Editable(Model, x => x.Title)</h2>
+    <hr class="primary">
+    <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
+</div>

@@ -1,0 +1,6 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<section class="section section-full @Model.Rendering.Parameters["Class_1"]">
+    @Html.Sitecore().DynamicPlaceholder("contentSections")
+</section>
