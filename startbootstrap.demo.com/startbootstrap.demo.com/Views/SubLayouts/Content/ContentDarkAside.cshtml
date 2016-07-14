@@ -1,10 +1,9 @@
 ﻿@using Sitecore.Mvc
-@using Glass.Mapper.Sc.Web.Mvc
-@model startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.ContentDarkAside
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.IContentDarkAside>
 
 <div class="container text-center">
     <div class="call-to-action">
-        <h2>@Html.Glass().Editable(Model, x => x.Title)</h2>
-        @Html.Glass().Editable(Model, x => x.URL, new { @class = "btn btn-default btn-xl sr-button" })
+        <h2>@Editable(x => x.Title)</h2>
+        @Editable(x => x.URL, new { @class = "btn btn-default btn-xl sr-button" })
     </div>
 </div>

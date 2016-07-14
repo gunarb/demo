@@ -1,12 +1,11 @@
 ﻿@using Sitecore.Mvc
-@using Glass.Mapper.Sc.Web.Mvc
-@model startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.ContentHeader
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.IContentHeader>
 
 <div class="header-content">
     <div class="header-content-inner">
-        <h1 style="font-size: 65px;">@Html.Glass().Editable(Model, x => x.Title)</h1>
+        <h1 style="font-size: 65px;">@Editable(x => x.Title)</h1>
         <hr>
-        <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
-        @Html.Glass().Editable(Model, x => x.URL, new { @class= "btn btn-primary btn-xl page-scroll" })
+        <p>@Editable(x => x.Introduction)</p>
+        @Editable(x => x.URL, new { @class= "btn btn-primary btn-xl page-scroll" })
     </div>
 </div>
