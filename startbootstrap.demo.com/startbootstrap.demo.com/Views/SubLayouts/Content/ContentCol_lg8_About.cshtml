@@ -1,10 +1,9 @@
 ﻿@using Sitecore.Mvc
-@using Glass.Mapper.Sc.Web.Mvc
-@model startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.Column_Lg8_About
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.IColumn_Lg8_About>
 
 <div class="col-lg-8 col-lg-offset-2 text-center">
-    <h2 class="section-heading">@Html.Glass().Editable(Model, x => x.Title)</h2>
+    <h2 class="section-heading">@Editable(x => x.Title)</h2>
     <hr class="light">
-    <p class="text-faded">@Html.Glass().Editable(Model, x => x.Introduction)</p>
-    @Html.Glass().Editable(Model, x => x.URL, new { @class = "page-scroll btn btn-default btn-xl sr-button" })
+    <p class="text-faded">@Editable(x => x.Introduction)</p>
+    @Editable(x => x.URL, new { @class = "page-scroll btn btn-default btn-xl sr-button" })
 </div>

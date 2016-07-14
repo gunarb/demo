@@ -4,23 +4,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pragma warning disable 1591
 #pragma warning disable 0108
 //------------------------------------------------------------------------------
@@ -41,7 +24,6 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
 using Sitecore.Data;
-
 
 
 
@@ -89,8 +71,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IColumnImageConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IColumnImage : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasDestination
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Image field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
@@ -100,8 +81,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					[SitecoreField(IColumnImageConstants.ImageFieldName)]
 					Image Image  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Category field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -111,8 +91,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					[SitecoreField(IColumnImageConstants.CategoryFieldName)]
 					string Category  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Name field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -122,8 +101,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					[SitecoreField(IColumnImageConstants.NameFieldName)]
 					string Name  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class IColumnImageConstants{
@@ -132,23 +110,19 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "ColumnImage";
 
-		
-			
+					
 			public static readonly ID ImageFieldId = new ID("6bbc0800-9b44-4706-812b-5689a349df2a");
 			public const string ImageFieldName = "Image";
 			
-		
-			
+					
 			public static readonly ID CategoryFieldId = new ID("a30df8b8-c5a4-47e4-a700-ede0b7d2a0e6");
 			public const string CategoryFieldName = "Category";
 			
-		
-			
+					
 			public static readonly ID NameFieldId = new ID("71592d4d-c95a-4660-afc3-8a2ced4bd10d");
 			public const string NameFieldName = "Name";
 			
-		
-			
+					
 			public static readonly ID URLFieldId = new ID("8385df47-ec14-4679-b07b-21dbf27cc7ee");
 			public const string URLFieldName = "URL";
 			
@@ -167,8 +141,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class ColumnImage  : GlassBase, IColumnImage 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -179,8 +152,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumnImageConstants.ImageFieldName)]
 				public virtual Image Image  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Category field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -191,8 +163,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumnImageConstants.CategoryFieldName)]
 				public virtual string Category  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Name field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -203,8 +174,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumnImageConstants.NameFieldName)]
 				public virtual string Name  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The URL field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -217,7 +187,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 {
@@ -232,8 +201,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 	[SitecoreType(TemplateId=I_HasIntroductionConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_HasIntroduction : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Introduction field.
 					/// <para></para>
 					/// <para>Field Type: Rich Text</para>		
@@ -243,8 +211,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 					[SitecoreField(I_HasIntroductionConstants.IntroductionFieldName)]
 					string Introduction  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_HasIntroductionConstants{
@@ -253,8 +220,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_HasIntroduction";
 
-		
-			
+					
 			public static readonly ID IntroductionFieldId = new ID("dc01d647-e14f-42c0-9ff1-f05c2397ec7a");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -273,8 +239,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 	public partial class _HasIntroduction  : GlassBase, I_HasIntroduction 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Introduction field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -287,7 +252,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 {
@@ -302,8 +266,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 	[SitecoreType(TemplateId=ICSSClassParamConstants.TemplateIdString )] //, Cachable = true
 	public partial interface ICSSClassParam : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Class_1 field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -313,8 +276,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 					[SitecoreField(ICSSClassParamConstants.Class_1FieldName)]
 					string Class_1  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Class_2 field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -324,8 +286,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 					[SitecoreField(ICSSClassParamConstants.Class_2FieldName)]
 					string Class_2  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class ICSSClassParamConstants{
@@ -334,13 +295,11 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "CSSClassParam";
 
-		
-			
+					
 			public static readonly ID Class_1FieldId = new ID("e0246ae0-b6f8-4fe9-a989-89325933c373");
 			public const string Class_1FieldName = "Class_1";
 			
-		
-			
+					
 			public static readonly ID Class_2FieldId = new ID("bac3e1e0-7ff9-4328-883c-2153383ff4e1");
 			public const string Class_2FieldName = "Class_2";
 			
@@ -359,8 +318,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 	public partial class CSSClassParam  : GlassBase, ICSSClassParam 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Class_1 field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -371,8 +329,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 				[SitecoreField(ICSSClassParamConstants.Class_1FieldName)]
 				public virtual string Class_1  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Class_2 field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -385,7 +342,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -400,8 +356,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IContentDarkAsideConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IContentDarkAside : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasTitle, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasDestination
 	{
-			
-	}
+				}
 
 
 	public static partial class IContentDarkAsideConstants{
@@ -410,13 +365,11 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "ContentDarkAside";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID URLFieldId = new ID("8385df47-ec14-4679-b07b-21dbf27cc7ee");
 			public const string URLFieldName = "URL";
 			
@@ -435,8 +388,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class ContentDarkAside  : GlassBase, IContentDarkAside 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -447,8 +399,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IContentDarkAsideConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The URL field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -461,7 +412,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Page_Types
 {
@@ -476,8 +426,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Page_Types
 	[SitecoreType(TemplateId=IHomeStartBootstrapConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IHomeStartBootstrap : IGlassBase 
 	{
-			
-	}
+				}
 
 
 	public static partial class IHomeStartBootstrapConstants{
@@ -503,7 +452,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Page_Types
 	   
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -518,8 +466,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IContentHeaderConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IContentHeader : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasTitle, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasIntroduction, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasDestination
 	{
-			
-	}
+				}
 
 
 	public static partial class IContentHeaderConstants{
@@ -528,18 +475,15 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "ContentHeader";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID IntroductionFieldId = new ID("dc01d647-e14f-42c0-9ff1-f05c2397ec7a");
 			public const string IntroductionFieldName = "Introduction";
 			
-		
-			
+					
 			public static readonly ID URLFieldId = new ID("8385df47-ec14-4679-b07b-21dbf27cc7ee");
 			public const string URLFieldName = "URL";
 			
@@ -558,8 +502,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class ContentHeader  : GlassBase, IContentHeader 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -570,8 +513,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IContentHeaderConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Introduction field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -582,8 +524,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IContentHeaderConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The URL field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -596,7 +537,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 {
@@ -611,8 +551,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 	[SitecoreType(TemplateId=ICTAConstants.TemplateIdString )] //, Cachable = true
 	public partial interface ICTA : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasContent, global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasDestination
 	{
-			
-	}
+				}
 
 
 	public static partial class ICTAConstants{
@@ -621,18 +560,15 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "CTA";
 
-		
-			
+					
 			public static readonly ID DescriptionFieldId = new ID("82f27516-e5c8-44d6-ac84-eb1b92015426");
 			public const string DescriptionFieldName = "Description";
 			
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("2514cda6-5867-4151-a5fd-b96b33cc8225");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID DestinationFieldId = new ID("14e2d05f-a3bd-4613-bbbb-f46443b98b20");
 			public const string DestinationFieldName = "Destination";
 			
@@ -651,8 +587,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 	public partial class CTA  : GlassBase, ICTA 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Description field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -663,8 +598,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICTAConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -675,8 +609,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICTAConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Destination field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -689,7 +622,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 {
@@ -704,8 +636,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 	[SitecoreType(TemplateId=I_HasContentConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_HasContent : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Description field.
 					/// <para></para>
 					/// <para>Field Type: Rich Text</para>		
@@ -715,8 +646,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					[SitecoreField(I_HasContentConstants.DescriptionFieldName)]
 					string Description  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -726,8 +656,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					[SitecoreField(I_HasContentConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_HasContentConstants{
@@ -736,13 +665,11 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_HasContent";
 
-		
-			
+					
 			public static readonly ID DescriptionFieldId = new ID("82f27516-e5c8-44d6-ac84-eb1b92015426");
 			public const string DescriptionFieldName = "Description";
 			
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("2514cda6-5867-4151-a5fd-b96b33cc8225");
 			public const string TitleFieldName = "Title";
 			
@@ -761,8 +688,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 	public partial class _HasContent  : GlassBase, I_HasContent 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Description field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -773,8 +699,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 				[SitecoreField(I_HasContentConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -787,7 +712,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -802,8 +726,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IColumn_Lg12Constants.TemplateIdString )] //, Cachable = true
 	public partial interface IColumn_Lg12 : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasTitle
 	{
-			
-	}
+				}
 
 
 	public static partial class IColumn_Lg12Constants{
@@ -812,8 +735,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Column_lg12";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
@@ -832,8 +754,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class Column_Lg12  : GlassBase, IColumn_Lg12 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -846,7 +767,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 {
@@ -861,8 +781,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 	[SitecoreType(TemplateId=I_HasDestinationConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_HasDestination : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The URL field.
 					/// <para></para>
 					/// <para>Field Type: General Link</para>		
@@ -872,8 +791,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 					[SitecoreField(I_HasDestinationConstants.URLFieldName)]
 					Link URL  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_HasDestinationConstants{
@@ -882,8 +800,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_HasDestination";
 
-		
-			
+					
 			public static readonly ID URLFieldId = new ID("8385df47-ec14-4679-b07b-21dbf27cc7ee");
 			public const string URLFieldName = "URL";
 			
@@ -902,8 +819,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 	public partial class _HasDestination  : GlassBase, I_HasDestination 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The URL field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -916,7 +832,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -931,8 +846,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IColumn_Lg8_ContactConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IColumn_Lg8_Contact : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasTitle, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasIntroduction
 	{
-			
-	}
+				}
 
 
 	public static partial class IColumn_Lg8_ContactConstants{
@@ -941,13 +855,11 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Column_lg8_Contact";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID IntroductionFieldId = new ID("dc01d647-e14f-42c0-9ff1-f05c2397ec7a");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -966,8 +878,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class Column_Lg8_Contact  : GlassBase, IColumn_Lg8_Contact 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -978,8 +889,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumn_Lg8_ContactConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Introduction field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -992,7 +902,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 {
@@ -1007,8 +916,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 	[SitecoreType(TemplateId=IJumbotronConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IJumbotron : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasContent, global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasDestination, global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasImage
 	{
-			
-	}
+				}
 
 
 	public static partial class IJumbotronConstants{
@@ -1017,23 +925,19 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Jumbotron";
 
-		
-			
+					
 			public static readonly ID DescriptionFieldId = new ID("82f27516-e5c8-44d6-ac84-eb1b92015426");
 			public const string DescriptionFieldName = "Description";
 			
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("2514cda6-5867-4151-a5fd-b96b33cc8225");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID DestinationFieldId = new ID("14e2d05f-a3bd-4613-bbbb-f46443b98b20");
 			public const string DestinationFieldName = "Destination";
 			
-		
-			
+					
 			public static readonly ID ImageFieldId = new ID("58f43e4d-a896-4bac-9c96-9ca78bb8bbc7");
 			public const string ImageFieldName = "Image";
 			
@@ -1052,8 +956,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 	public partial class Jumbotron  : GlassBase, IJumbotron 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Description field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1064,8 +967,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(IJumbotronConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1076,8 +978,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(IJumbotronConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Destination field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -1088,8 +989,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(IJumbotronConstants.DestinationFieldName)]
 				public virtual Link Destination  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1102,7 +1002,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -1117,8 +1016,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IColumn_Lg4Constants.TemplateIdString )] //, Cachable = true
 	public partial interface IColumn_Lg4 : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasDestination, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasIntroduction
 	{
-			
-	}
+				}
 
 
 	public static partial class IColumn_Lg4Constants{
@@ -1127,13 +1025,11 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Column_lg4";
 
-		
-			
+					
 			public static readonly ID URLFieldId = new ID("8385df47-ec14-4679-b07b-21dbf27cc7ee");
 			public const string URLFieldName = "URL";
 			
-		
-			
+					
 			public static readonly ID IntroductionFieldId = new ID("dc01d647-e14f-42c0-9ff1-f05c2397ec7a");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -1152,8 +1048,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class Column_Lg4  : GlassBase, IColumn_Lg4 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The URL field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -1164,8 +1059,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumn_Lg4Constants.URLFieldName)]
 				public virtual Link URL  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Introduction field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1178,7 +1072,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 {
@@ -1193,8 +1086,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 	[SitecoreType(TemplateId=I_HasImageConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_HasImage : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Image field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
@@ -1204,8 +1096,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					[SitecoreField(I_HasImageConstants.ImageFieldName)]
 					Image Image  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_HasImageConstants{
@@ -1214,8 +1105,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_HasImage";
 
-		
-			
+					
 			public static readonly ID ImageFieldId = new ID("58f43e4d-a896-4bac-9c96-9ca78bb8bbc7");
 			public const string ImageFieldName = "Image";
 			
@@ -1234,8 +1124,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 	public partial class _HasImage  : GlassBase, I_HasImage 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1248,7 +1137,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 {
@@ -1263,8 +1151,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 	[SitecoreType(TemplateId=IBackGroundParamConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IBackGroundParam : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The BackgroundImg field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
@@ -1274,8 +1161,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 					[SitecoreField(IBackGroundParamConstants.BackgroundImgFieldName)]
 					Image BackgroundImg  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class IBackGroundParamConstants{
@@ -1284,8 +1170,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "BackGroundParam";
 
-		
-			
+					
 			public static readonly ID BackgroundImgFieldId = new ID("0ca75508-e11d-4860-b9c2-d40b5671e338");
 			public const string BackgroundImgFieldName = "BackgroundImg";
 			
@@ -1304,8 +1189,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 	public partial class BackGroundParam  : GlassBase, IBackGroundParam 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The BackgroundImg field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1318,7 +1202,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 {
@@ -1333,8 +1216,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 	[SitecoreType(TemplateId=I_HasDestinationConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_HasDestination : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Destination field.
 					/// <para></para>
 					/// <para>Field Type: General Link</para>		
@@ -1344,8 +1226,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					[SitecoreField(I_HasDestinationConstants.DestinationFieldName)]
 					Link Destination  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_HasDestinationConstants{
@@ -1354,8 +1235,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_HasDestination";
 
-		
-			
+					
 			public static readonly ID DestinationFieldId = new ID("14e2d05f-a3bd-4613-bbbb-f46443b98b20");
 			public const string DestinationFieldName = "Destination";
 			
@@ -1374,8 +1254,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 	public partial class _HasDestination  : GlassBase, I_HasDestination 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Destination field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -1388,7 +1267,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.Content
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Page_Types
 {
@@ -1403,8 +1281,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Page_Types
 	[SitecoreType(TemplateId=IHomeDemoConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IHomeDemo : IGlassBase 
 	{
-			
-	}
+				}
 
 
 	public static partial class IHomeDemoConstants{
@@ -1430,7 +1307,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Page_Types
 	   
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 {
@@ -1445,8 +1321,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 	[SitecoreType(TemplateId=ICarConstants.TemplateIdString )] //, Cachable = true
 	public partial interface ICar : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasContent, global::startbootstrap.demo.com.Models.sitecore.templates.Base.Content.I_HasImage
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Make field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1456,8 +1331,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 					[SitecoreField(ICarConstants.MakeFieldName)]
 					string Make  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Model field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1467,8 +1341,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 					[SitecoreField(ICarConstants.ModelFieldName)]
 					string Model  {get; set;}
 			
-			
-					/// <summary>
+								/// <summary>
 					/// The Year field.
 					/// <para></para>
 					/// <para>Field Type: Number</para>		
@@ -1478,8 +1351,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 					[SitecoreField(ICarConstants.YearFieldName)]
 					float Year  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class ICarConstants{
@@ -1488,33 +1360,27 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Car";
 
-		
-			
+					
 			public static readonly ID MakeFieldId = new ID("d4ab707b-7196-4168-9f33-9a5ec1107867");
 			public const string MakeFieldName = "Make";
 			
-		
-			
+					
 			public static readonly ID ModelFieldId = new ID("ec89dd18-3959-4f43-907c-e88efc374de1");
 			public const string ModelFieldName = "Model";
 			
-		
-			
+					
 			public static readonly ID YearFieldId = new ID("1c5470bd-bd27-448b-bfa9-675abf41a33c");
 			public const string YearFieldName = "Year";
 			
-		
-			
+					
 			public static readonly ID DescriptionFieldId = new ID("82f27516-e5c8-44d6-ac84-eb1b92015426");
 			public const string DescriptionFieldName = "Description";
 			
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("2514cda6-5867-4151-a5fd-b96b33cc8225");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID ImageFieldId = new ID("58f43e4d-a896-4bac-9c96-9ca78bb8bbc7");
 			public const string ImageFieldName = "Image";
 			
@@ -1533,8 +1399,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 	public partial class Car  : GlassBase, ICar 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Make field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1545,8 +1410,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICarConstants.MakeFieldName)]
 				public virtual string Make  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Model field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1557,8 +1421,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICarConstants.ModelFieldName)]
 				public virtual string Model  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Year field.
 				/// <para></para>
 				/// <para>Field Type: Number</para>		
@@ -1569,8 +1432,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICarConstants.YearFieldName)]
 				public virtual float Year  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Description field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1581,8 +1443,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICarConstants.DescriptionFieldName)]
 				public virtual string Description  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1593,8 +1454,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 				[SitecoreField(ICarConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -1607,7 +1467,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo01
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -1622,8 +1481,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IColumn_Lg3Constants.TemplateIdString )] //, Cachable = true
 	public partial interface IColumn_Lg3 : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasTitle, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasIntroduction
 	{
-			
-	}
+				}
 
 
 	public static partial class IColumn_Lg3Constants{
@@ -1632,13 +1490,11 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Column_lg3";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID IntroductionFieldId = new ID("dc01d647-e14f-42c0-9ff1-f05c2397ec7a");
 			public const string IntroductionFieldName = "Introduction";
 			
@@ -1657,8 +1513,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class Column_Lg3  : GlassBase, IColumn_Lg3 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1669,8 +1524,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumn_Lg3Constants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Introduction field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1683,7 +1537,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 {
@@ -1698,8 +1551,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	[SitecoreType(TemplateId=IColumn_Lg8_AboutConstants.TemplateIdString )] //, Cachable = true
 	public partial interface IColumn_Lg8_About : IGlassBase , global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasTitle, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasIntroduction, global::startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content.I_HasDestination
 	{
-			
-	}
+				}
 
 
 	public static partial class IColumn_Lg8_AboutConstants{
@@ -1708,18 +1560,15 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Column_lg8_About";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
-		
-			
+					
 			public static readonly ID IntroductionFieldId = new ID("dc01d647-e14f-42c0-9ff1-f05c2397ec7a");
 			public const string IntroductionFieldName = "Introduction";
 			
-		
-			
+					
 			public static readonly ID URLFieldId = new ID("8385df47-ec14-4679-b07b-21dbf27cc7ee");
 			public const string URLFieldName = "URL";
 			
@@ -1738,8 +1587,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 	public partial class Column_Lg8_About  : GlassBase, IColumn_Lg8_About 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1750,8 +1598,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumn_Lg8_AboutConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The Introduction field.
 				/// <para></para>
 				/// <para>Field Type: Rich Text</para>		
@@ -1762,8 +1609,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 				[SitecoreField(IColumn_Lg8_AboutConstants.IntroductionFieldName)]
 				public virtual string Introduction  {get; set;}
 					
-		
-				/// <summary>
+						/// <summary>
 				/// The URL field.
 				/// <para></para>
 				/// <para>Field Type: General Link</para>		
@@ -1776,7 +1622,6 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02
 					
 			
 	}
-
 }
 namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 {
@@ -1791,8 +1636,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 	[SitecoreType(TemplateId=I_HasTitleConstants.TemplateIdString )] //, Cachable = true
 	public partial interface I_HasTitle : IGlassBase 
 	{
-			
-					/// <summary>
+								/// <summary>
 					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1802,8 +1646,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 					[SitecoreField(I_HasTitleConstants.TitleFieldName)]
 					string Title  {get; set;}
 			
-			
-	}
+				}
 
 
 	public static partial class I_HasTitleConstants{
@@ -1812,8 +1655,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "_HasTitle";
 
-		
-			
+					
 			public static readonly ID TitleFieldId = new ID("987e3bb3-f000-420a-b3f5-4d8234eb9480");
 			public const string TitleFieldName = "Title";
 			
@@ -1832,8 +1674,7 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 	public partial class _HasTitle  : GlassBase, I_HasTitle 
 	{
 	   
-		
-				/// <summary>
+						/// <summary>
 				/// The Title field.
 				/// <para></para>
 				/// <para>Field Type: Single-Line Text</para>		
@@ -1846,5 +1687,4 @@ namespace startbootstrap.demo.com.Models.sitecore.templates.Base.SB_Content
 					
 			
 	}
-
 }
