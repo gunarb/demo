@@ -1,8 +1,9 @@
 ﻿@using Sitecore.Mvc
-@using Glass.Mapper.Sc.Web.Mvc
-@model startbootstrap.demo.com.Models.ColumnModel
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<startbootstrap.demo.com.Models.sitecore.templates.Content_Type.Demo02.IColumn_Lg4>
 
-<div class="col-lg-4 @Model.Rendering.Parameters["Class_1"] text-center">
-    <i class="fa @Model.Rendering.Parameters["Class_2"] fa-3x sr-contact"></i>
-    <p>@Html.Glass().Editable(Model, x => x.Introduction)</p>
+@{ var parameters = GetRenderingParameters<startbootstrap.demo.com.Models.sitecore.templates.Base.Parameters.ICSSClassParam>(); }
+
+<div class="col-lg-4 @parameters.Class_1 text-center">
+    <i class="fa @parameters.Class_2 fa-3x sr-contact"></i>
+    <p>@Editable(x => x.Introduction)</p>
 </div>

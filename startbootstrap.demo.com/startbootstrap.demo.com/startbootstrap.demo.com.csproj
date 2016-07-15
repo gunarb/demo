@@ -101,7 +101,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\..\..\..\..\Desktop\Sitecore Ref\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\..\..\..\..\..\Desktop\Sitecore Ref\Sitecore.Mvc.dll</HintPath>
@@ -222,7 +222,6 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
-    <Compile Include="Models\ColumnModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TdsClases.cs" />
   </ItemGroup>
@@ -296,6 +295,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\less\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
