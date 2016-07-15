@@ -259,8 +259,8 @@
       <DependentUpon>Sitecore.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
-    <None Include="Properties\PublishProfiles\startbootstrap_demo_com.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
+    <None Include="Properties\PublishProfiles\dev.startbootstrap.demo.com.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\creative.js" />
     <Content Include="Scripts\creative.min.js" />
